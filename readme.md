@@ -11,10 +11,9 @@ git clone https://github.com/Dpbm/extract_frames.git
 
 3. Go to extract_frames directory and run
 ```
-pipenv sync
+pipenv install
 ```
-
-5. After run
+4. After run
 ```
 python main.py
 ```
