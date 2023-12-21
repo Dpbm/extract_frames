@@ -1,0 +1,9 @@
+name: extract_frames
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - opencv-python
+    - Pillow
