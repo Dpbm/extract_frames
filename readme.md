@@ -2,6 +2,10 @@
 
 
 
+https://github.com/Dpbm/extract_frames/assets/75098594/789637b4-6ba7-488a-95d2-07de1737251a
+
+
+
 This is an old project of mine, using python, to extract frames from a video.
 
 The idea here is an automate this process, and learning something about [Pillow](https://pillow.readthedocs.io/en/stable/) and [OpencvPython](https://pypi.org/project/opencv-python/).
