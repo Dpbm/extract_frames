@@ -1,29 +1,63 @@
-# EXTRACT FRAMES FROM A '.mp4' VIDEO
+# extract frames from a mp4 video
 
-# HOW TO USE
 
-1. clone this repository
 
-```
+This is an old project of mine, using python, to extract frames from a video.
+
+The idea here is an automate this process, and learning something about [Pillow](https://pillow.readthedocs.io/en/stable/) and [OpencvPython](https://pypi.org/project/opencv-python/).
+
+## Requirements
+
+To run that you need to have installed in your machine:
+
+* python3 (3.8)
+* pip
+* git
+
+Using [Pipenv](https://pipenv.pypa.io/en/latest/) or [conda](https://www.anaconda.com/) is optional here, but recommended.
+
+## Installation
+
+To install this project:
+
+1. clone this repo
+
+```bash
 git clone https://github.com/Dpbm/extract_frames.git
+cd extract_frames
 ```
 
-2. install [pipenv](https://pypi.org/project/pipenv/) or use the pip command
+3. install dependencies
 
-3. Go to extract_frames directory and run
-
-```
-pipenv install
-
-    or
-
+```bash
+# using pip
 pip install -r requirements.txt
+
+# using conda
+conda env create -f enviroment.yml
+conda activate extract_frames
+
+# using pipenv
+pipenv install
+pipenv shell
 ```
 
-4. After run
+## Using
 
-```
-python main.py
+In the project directory run:
+
+```bash
+python3 main.py
 ```
 
-`NOTE: case you use alias of python 3.7 as python3 change python command to python3 command, the same goes for the pip. `
+Then provide the `folder path` where the videos are and the `salt number`, this number provides how much time you need to wait before getting a frame.
+
+The resulting images are put inside the directory `./frames`
+
+`Note: this scripts run over a folder, not a single file!` 
+
+--- 
+
+For sure, this is a too simple project, and all this could be done so much better using [ffmpeg](https://ffmpeg.org/) or similar. However, this project I've made a couple of year ago, and I don't intend to update it for now.
+
+If you want to update this project by yourself, I'll be pleasured to accept your pull request :)
